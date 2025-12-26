@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import clientPromise from '../lib/mongodb.ts';
-import { pusher } from '../lib/pusher.ts'
+import clientPromise from '../lib/mongodb.js';
+import { pusher } from '../lib/pusher.js'
 
 // Updated Data Model
 interface Ticket {
