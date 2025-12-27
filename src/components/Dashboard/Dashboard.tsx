@@ -97,24 +97,24 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-8 pt-6 px-6 md:px-10">
-          <h2 className="text-3xl font-bold text-gray-900">Hi {username}</h2>
-          <div className="flex gap-4 items-center">
-             <div className="flex items-center text-sm bg-green-50 px-3 py-1 rounded-full border border-green-200">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+    <div className="dashboard-container">
+      <div className="dashboard-content">
+        <div className="dashboard-header">
+          <h2 className="dashboard-title">Hi {username}</h2>
+          <div className="header-actions">
+             <div className="live-indicator">
+                <span className="live-dot"></span>
                 Live Connected
              </div>
-             <button onClick={handleLogout} className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">
+             <button onClick={handleLogout} className="logout-button">
                 Log Out
              </button>
           </div>
         </div>
 
-        {loading && <p className="text-center">Loading...</p>}
+        {loading && <p className="loading-text">Loading...</p>}
         
-        <div className="flex border border-gray-200 rounded-lg bg-white shadow-lg" style={{ height: 'calc(100vh - 120px)' }}>
+        <div className="dashboard-main" style={{ height: 'calc(100vh - 120px)' }}>
           <QuestionList tickets={tickets} onSelectTicket={handleSelectTicket} selectedTicket={selectedTicket} />
           <QuestionDetails ticket={selectedTicket} handleClaim={handleClaim} />
         </div>

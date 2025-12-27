@@ -10,11 +10,11 @@ interface QuestionListProps {
 
 const QuestionList: React.FC<QuestionListProps> = ({ tickets, onSelectTicket, selectedTicket }) => {
   return (
-    <div className="w-1/3 border-r border-gray-200">
-      <div className="p-4">
-        <h2 className="text-xl font-bold">Questions</h2>
+    <div className="question-list-container">
+      <div className="question-list-header">
+        <h2 className="question-list-title">Questions</h2>
       </div>
-      <div className="overflow-y-auto" style={{ height: 'calc(100% - 64px)' }}>
+      <div className="question-list" style={{ height: 'calc(100% - 64px)' }}>
         {tickets.map((ticket) => (
           <QuestionListItem
             key={ticket._id}

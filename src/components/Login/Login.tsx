@@ -36,26 +36,26 @@ export default function Login() {
   };
 
   return (
-    <div className="max-w-sm mx-auto mt-20 p-6 bg-white rounded shadow-md border">
-      <h2 className="text-xl font-bold mb-4">Tutor Login</h2>
-      {error && <p className="text-red-500 mb-2">{error}</p>}
+    <div className="login-container">
+      <h2 className="login-title">Tutor Login</h2>
+      {error && <p className="error-message">{error}</p>}
       
-      <form onSubmit={handleLogin} className="space-y-4">
+      <form onSubmit={handleLogin} className="login-form">
         <input 
           type="text" 
           placeholder="Username" 
-          className="w-full p-2 border rounded"
+          className="login-input"
           value={username}
           onChange={e => setUsername(e.target.value)}
         />
         <input 
           type="password" 
           placeholder="Password" 
-          className="w-full p-2 border rounded"
+          className="login-input"
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
-        <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">
+        <button type="submit" className="login-button">
           Log In
         </button>
       </form>
