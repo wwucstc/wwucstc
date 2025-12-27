@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import TicketForm from './components/TicketForm';
-import Login from './components/Login';
-import Dashboard from './components/Dashboard';
+import TicketForm from './components/TicketForm/TicketForm';
+import Login from './components/Login/Login';
+import Dashboard from './components/Dashboard/Dashboard';
 import './App.css';
 
 function App() {
