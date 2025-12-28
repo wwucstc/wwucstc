@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Ticket } from '../../types';
+import './QuestionDetails.css'
 
 interface QuestionDetailsProps {
   ticket: Ticket | null;

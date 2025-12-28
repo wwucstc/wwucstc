@@ -4,6 +4,7 @@ import Pusher from 'pusher-js';
 import QuestionList from '../QuestionList/QuestionList';
 import QuestionDetails from '../QuestionDetails/QuestionDetails';
 import type { Ticket, TicketUpdateEvent } from '../../types';
+import './Dashboard.css';
 
 export default function Dashboard() {
   const navigate = useNavigate();
@@ -102,10 +103,6 @@ export default function Dashboard() {
         <div className="dashboard-header">
           <h2 className="dashboard-title">Hi {username}</h2>
           <div className="header-actions">
-             <div className="live-indicator">
-                <span className="live-dot"></span>
-                Live Connected
-             </div>
              <button onClick={handleLogout} className="logout-button">
                 Log Out
              </button>
@@ -114,7 +111,7 @@ export default function Dashboard() {
 
         {loading && <p className="loading-text">Loading...</p>}
         
-        <div className="dashboard-main" style={{ height: 'calc(100vh - 120px)' }}>
+        <div className="dashboard-main">
           <QuestionList tickets={tickets} onSelectTicket={handleSelectTicket} selectedTicket={selectedTicket} />
           <QuestionDetails ticket={selectedTicket} handleClaim={handleClaim} />
         </div>

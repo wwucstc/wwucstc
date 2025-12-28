@@ -1,4 +1,5 @@
 import React from 'react';
+import './QuestionListItem.css';
 import type { Ticket } from '../../types';
 
 interface QuestionListItemProps {

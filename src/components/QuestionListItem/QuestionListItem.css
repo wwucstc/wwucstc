@@ -1,0 +1,50 @@
+.question-list-item {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-list-item.selected {
+    background-color: #e0e0e0;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.item-student-name {
+    color: #333;
+    font-weight: bold;
+}
+
+.status-badge {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    color: white;
+}
+
+.status-badge.status-new {
+    background-color: #3498db; /* blue */
+}
+
+.status-badge.status-in-progress {
+    background-color: #f39c12; /* orange */
+}
+
+.status-badge.status-complete {
+    background-color: #2ecc71; /* green */
+}
+
+.status-badge.status-default {
+    background-color: #95a5a6; /* grey */
+}

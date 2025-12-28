@@ -7,14 +7,11 @@ import './App.css';
 function App() {
   return (
     <div className="app-container">
-      {/* Navigation Bar (Optional, but helpful for testing) */}
       <nav className="main-nav">
         <Link to="/" className="nav-link">Student Home</Link>
-        <Link to="/login" className="nav-link">Tutor Login</Link>
-        <Link to="/dashboard" className="nav-link">Dashboard</Link>
+        <Link to="/dashboard" className="nav-link" target="_blank" rel="noopener noreferrer">Tutors Login</Link>
       </nav>
 
-      {/* The "Screen" that changes based on URL */}
       <Routes>
         <Route path="/" element={<StudentLayout />} />
         <Route path="/login" element={<Login />} />

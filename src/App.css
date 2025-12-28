@@ -1,42 +1,46 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  /* padding: 2rem; */
-  /* text-align: center; */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  background-color: #eee;
+  border-bottom: 1px solid #dee2e6;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link {
+  margin-left: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-link:hover {
+  text-decoration: underline;
 }
 
-.card {
-  padding: 2em;
+.student-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
-.read-the-docs {
-  color: #888;
-} */
+.student-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.student-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.student-subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
+}

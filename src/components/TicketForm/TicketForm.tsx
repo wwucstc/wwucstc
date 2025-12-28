@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './TicketForm.css';
 import type { FormEvent } from 'react';
 
 export default function TicketForm() {
