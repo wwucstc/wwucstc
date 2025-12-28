@@ -1,23 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 :root {
   /* Light Theme (Default) */
-  --bg-primary: #6d5959;
-  --bg-secondary: #f3f4f6;
+  --bg-primary: #f2f2f2;
+  --bg-secondary: #ffffff;
   --text-primary: #111827;
-  --text-secondary: #4b5563;
-  --primary: #2563eb;
-  --accent: #8b5cf6;
+  --text-secondary: #666666;
+  --primary: #60a5fa;
+  --accent: #3b7ac7;
   --border: #e5e7eb;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     /* Dark Theme */
+    /* --bg-primary: #111827; */
     --bg-primary: #111827;
     --bg-secondary: #1f2937;
     --text-primary: #f9fafb;
-    --text-secondary: #9ca3af;
+    --text-secondary: #939699;
     --primary: #60a5fa;
-    --accent: #a78bfa;
+    --accent: #3b7ac7;
     --border: #374151;
   }
 }

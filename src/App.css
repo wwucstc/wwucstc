@@ -1,3 +1,15 @@
+body {
+  font-family: "Google Sans", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+textarea {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Google Sans", sans-serif;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
@@ -7,20 +19,26 @@
 .main-nav {
   display: flex;
   justify-content: flex-end;
-  padding: 1rem;
-  background-color: #eee;
-  border-bottom: 1px solid #dee2e6;
+  /* padding: 1rem; */
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 .nav-link {
   margin-left: 1rem;
-  color: #007bff;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 500;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: color 0.1s;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  color: var(--accent);
+  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .student-layout {
@@ -42,5 +60,5 @@
 
 .student-subtitle {
   font-size: 1.2rem;
-  color: #6c757d;
+  color: var(--text-secondary);
 }

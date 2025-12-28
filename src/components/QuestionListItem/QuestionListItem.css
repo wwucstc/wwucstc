@@ -1,6 +1,6 @@
 .question-list-item {
-    background-color: #fafafa;
-    border: 1px solid #eee;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
     padding: 10px;
     cursor: pointer;
     margin-bottom: 5px;
@@ -11,7 +11,7 @@
 }
 
 .question-list-item.selected {
-    background-color: #e0e0e0;
+    background-color: var(--bg-primary);
 }
 
 .item-content {
@@ -22,7 +22,7 @@
 }
 
 .item-student-name {
-    color: #333;
+    color: var(--text-primary);
     font-weight: bold;
 }
 
@@ -30,11 +30,11 @@
     padding: 3px 8px;
     border-radius: 12px;
     font-size: 0.8em;
-    color: white;
+    color: var(--text-primary);
 }
 
 .status-badge.status-new {
-    background-color: #3498db; /* blue */
+    background-color: var(--primary); /* blue */
 }
 
 .status-badge.status-in-progress {
